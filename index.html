@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@562&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Сайт-визитка</title>
+</head>
+<body>
+ 
+  <div class="big_wrapper">
+  
+   <header>
+    <div class="header">
+      
+      <div class="logo">MG-LOGO</div>
+      
+      <nav>
+        <div class="navigate">
+          <a class="nav_link" href="#top_anchor">Главная</a>
+          <a class="nav_link" href="#about_anchor">Обо мне</a>
+          <a class="nav_link" href="#resume_anchor">Портфолио</a>
+          <a class="nav_link" href="#skills_anchor">Навыки</a>
+         </div>
+      </nav> 
+      </div>
+  </header>
+ 
+  <main>
+    <div class="wrapper" id="top_anchor">
+      <div class="container">
+        <div class="resume_name">
+          <h2 class="h2">Сайт-резюме</h2>
+          <h1>Гуськова Максима Михайловича</h1>
+          <h2 class="h2">Junior Web Developer</h2>
+        </div>
+        </div>
+      
+      
+        <div class="resume_about" id="about_anchor">
+          <h3 class="h3">Обо мне</h3>
+          <p class="resume_about_first">
+            Моя основная специальность - юриспруденция.<br>В процессе обучения я проходил различные виды практик в районных судах, а также прокуратурах г. Ростова-на-Дону.<br>
+  С августа 2016 по сентябрь 2018 года, параллельно с обучением проходил стажировку в прокуратуре Ростовской области в должности общественного помощника начальника управления.<br>Однако, такая работа не приносила мне хоть какой-то радости ...</p>
+        </div>
+      
+        
+        <div class="resume_examples" id="resume_anchor">
+          <h3>Портфолио</h3>
+          <div class="images">
+            <div class="image img_1"><img src="https://wallpaperxyz.com/wp-content/uploads/Full-Hd-Desktop-Wallpapers-1920X1080-Free-Download-Wallpaperxyz.com-4.jpg" alt=""></div>
+            <div class="image img_2"><img src="https://images3.alphacoders.com/106/1069102.jpg" alt=""></div>
+            <div class="image img_3"><img src="https://wallpapercart.com/wp-content/uploads/2019/04/Anime-Dragon-Ball-Goku-HD-Wallpaper-1920x1080.png" alt=""></div>
+          </div>
+          <p class="portfolio_about">Верстка для меня - это не просто деятельность или работа.<br>Это шанс распрощаться с тем, что не приносит удовлетворения. <br>Это шанс начать радоваться каждому новому дню, проводимому за тем, что любишь.</p>
+        </div>
+    </div>
+    
+    <div class="resume_skills" id="skills_anchor">
+      <div class="resume_skills_items">
+        <h3>Мои навыки</h3>
+        <p class="resume_about_second">
+          <span class="icon"></span><span class="resume_about_skill">Уверенные знания технологий HTML5 / CSS3, основы Git</span><br>
+<span class="icon"></span><span class="resume_about_skill">Владение CSS Flexbox layout и CSS Grid layout</span><br>
+<span class="icon"></span><span class="resume_about_skill">Знание и использование на практике принципов методологии БЭМ</span><br>
+<span class="icon"></span><span class="resume_about_skill">Понимание принципов адаптивной и кроссбраузерной верстки</span><br>
+          <span class="icon"></span><span class="resume_about_skill">Владение CSS фреймфорком Bootstrap</span><br>
+<span class="icon"></span><span class="resume_about_skill">Навыки работы с Adobe Photoshop, Figma при верстке из PSD-макета</span><br>
+          <span class="icon"></span><span class="resume_about_skill">Базовые знания JS</span></p>
+        
+        <div class="skills_examples">
+      
+        <div class="html main_skill">
+          <div class="html_title title">HTML</div>
+          <article>Уровень владения: <span class="green num_color">80%</span></article>
+        </div>
+        
+        <div class="css main_skill">
+          <div class="css_title title">CSS</div>
+          <article>Уровень владения: <span class="yellow num_color">70%</span></article>
+        </div>
+        
+        <div class="js main_skill">
+          <div class="js_title title">JS</div>
+          <article>Уровень владения: <span class="red num_color">10%</span></article>
+        </div>
+          
+      </div>
+    </div>
+  </div>
+    
+    <div class="form_container">
+<h3>Напишите мне !</h3>
+  <div class="main_form">
+
+<form action="process.php">
+  
+  <label for="name">
+    <input type="text" placeholder="Наименование организации">
+  </label>
+  
+  <label for="email">
+    <input type="email" placeholder="E-mail">
+  </label>
+  
+  <label for="comment">
+    <textarea name="comment" id="comment" placeholder="Ваш комментарий"></textarea>
+   </label>
+  
+  <label for="button">
+   <button class="submit" type="submit">Отправить</button>
+    </label>
+
+    </form>
+  
+  </div>
+</div>
+    
+    
+  </main>
+  
+  <footer>
+    <div class="footer_wrapper">
+      <span class="rights">© 2020 By Max Gus.</span>
+      <div class="footer_links">
+        <a href="#">E-mail</a>
+        <a href="#">HH</a>
+        <a href="#">VK</a>
+        <a href="#">FB</a>
+      </div>
+    </div>
+  </footer>
+  
+  </div>
+
+  </body>
+</html>
