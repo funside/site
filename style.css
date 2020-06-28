@@ -1,0 +1,438 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+.big_wrapper{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overscroll-behavior: none;
+  padding-top: 70px;
+}
+
+
+
+/*----FIX FOR POSITION FIXED----*/
+
+#top_anchor{
+  padding-top: 110px;
+  margin-top: -110px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+#about_anchor,
+#resume_anchor,
+#skills_anchor{
+  padding-top: 155px;
+  margin-top: -155px;
+}
+
+/*---------------HEADER------------*/
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 20px 0;
+  padding-right: 40px;
+  background-color: #1e1f26; 
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.navigate{
+  display: flex;
+}
+
+.navigate a{
+  margin-right: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  
+}
+
+.nav_link:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.navigate a:hover:after{
+  opacity: 1;
+}
+
+@media (min-width:960px){
+  h1{
+    font-size: 55px;
+  }  
+  
+  .h2{
+    font-size: 35px;
+  }
+}
+
+@media (max-width:767px){
+  
+  .header{
+    max-width: none;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .navigate{
+    flex-direction: column;
+  }
+  
+  .navigate a{
+    padding-bottom: 5px;
+    font-size: 14px;
+    align-self: center;
+  }
+  
+  .logo{
+    align-self: center;
+    position: relative;
+    left: -20px;
+  }
+  
+ 
+  .container{
+    margin-top: -140px;
+    padding-top: 60px;
+  }
+  
+}
+
+
+
+.logo{
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+}
+
+/*About*/
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.wallpaperscraft.ru/image/doroga_razmetka_derevia_137674_3840x2160.jpg") no-repeat 50% 62%;
+  background-size: cover;
+  height: 95vh;
+  margin-bottom: 100px;
+}
+
+.resume_name{
+  text-align: center; 
+}
+
+h1{
+  color: white;
+}
+
+.h2{
+  color: white;
+}
+
+.resume_about_first,
+.portfolio_about,
+.resume_about_second{
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 100px;
+  padding: 0 15px;
+}
+
+.resume_about_first:after,
+.portfolio_about:after{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+ 
+/*-------Examples------*/
+.resume_examples{
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.images{
+  display: flex;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+@media (max-width:767px) {
+  .images{
+    max-width: none;
+    flex-wrap: wrap;
+  }
+}
+
+.image img{
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 0 5px 2px;
+}
+
+h3{
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Skills*/
+
+.skills_examples{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width:767px) {
+  .skills_examples{
+    max-width: none;
+    flex-direction: column;
+   
+  }
+}
+
+.main_skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.title{
+  border: 1px solid #1e1f26;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  background-color: #1e1f26;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.num_color{
+ font-size: 18px;
+ font-weight: 700;
+}
+
+article{
+  font-size: 18px;
+}
+
+.green{
+  color: green;
+}
+
+.yellow{
+  color: orange;
+}
+
+.red{
+  color: red;
+}
+
+.resume_skills_items:after{
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.icon{
+  position: relative;
+}
+
+.icon:before{
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  border-right: 2px solid green;
+  border-bottom: 2px solid green;
+  left: -40px;
+  top: 0px;
+  transform: rotate(30deg);
+}
+
+@media (max-width:767px) {
+  .icon:before{
+    max-width: none;
+    display:none;
+  }
+}
+
+.resume_about_skill{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/*--------FORM--------*/
+
+.main_form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 180px;
+  margin-top: -10px;
+}
+
+form{
+  width: 35%;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+}
+
+@media (max-width:767px) {
+  form{
+    max-width: none;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+  
+ form label {
+  padding:10px;
+  width:100%;
+}
+
+ input {
+  width: 100%;
+  height: 5vh;
+  padding: 0 20px;
+  border: 1px solid #1e1f26;
+}
+
+textarea {
+  width: 100%;
+  height: 20vh;
+  padding: 10px 20px;
+  resize: none;
+  border: 1px solid black;
+}
+
+.submit{
+  width: 100%;
+  height: 5vh;
+  background-color: #1e1f26;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.submit:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid #1e1f26;
+  transition: 0.4s;
+}
+
+::placeholder {
+  color: gray;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/*----------FOOTER----------*/
+.footer_wrapper{
+  background-color: #1e1f26;
+}
+
+.footer_links{
+  display: flex;
+  justify-content: flex-end;
+  }
+
+.footer_links a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-right: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  padding: 5px;
+}
+
+footer{
+  position: relative;
+}
+
+.footer_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  position:absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media (max-width:767px) {
+  .footer_wrapper{
+    max-width: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .rights{
+    padding-bottom: 10px;
+  }
+}
+
+.rights{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+  margin-left: 20px;
+}
